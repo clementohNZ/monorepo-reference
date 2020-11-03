@@ -2,6 +2,7 @@
   "name": "@clementohnz/data",
   "version": "0.0.0",
   "description": "Repository layer for fetching information (clean architecture adapters layer).",
+  "repository": "git@github.com:clementohNZ/monorepo-reference.git",
   "main": "dist/index",
   "author": "Clement Oh",
   "license": "UNLICENSED",

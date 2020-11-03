@@ -4,6 +4,7 @@
   "description": "Reference for new projects. The intent is to get new projects up and running faster.",
   "license": "UNLICENSED",
   "author": "Clement Oh",
+  "repository": "git@github.com:clementohNZ/monorepo-reference.git",
   "version": "0.0.0",
   "workspaces": [
     "packages/ts/*"
