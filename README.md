@@ -58,8 +58,9 @@ a hook that runs your tests before pushing to a repository.
 ### Easy TypeScript Refactoring Across Multiple Packages
 
 The packages have been configured to allow for easy refactoring across multiple packages. Your
-IDE will update call sites in different packages and tou don't have to rebuild each individual
-package before updating the call site in a separate package. This will save a lot of time.
+IDE will update call sites in different packages and tou don't have to transpile each individual
+package to JavaScript and generate the type definition files before you can update the call site
+in a separate package. **This will save a lot of time**.
 
 ### End-to-End Testing Framework for Web
 
