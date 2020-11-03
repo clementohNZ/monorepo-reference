@@ -13,8 +13,9 @@
     "build": "lerna run build",
     "clean": "lerna run clean",
     "docs": "doctoc --title '## Table of Contents' README.md",
-    "format": "npx prettier --write \"**/*\" && npx eslint \"**/*.ts\" --fix && yarn run format:packageJson",
+    "format": "npx prettier --write \"**/*\" && npx eslint \"**/*.ts\" --fix && yarn run format:packageJson && yarn run format:packageJson:packages",
     "format:packageJson": "npx prettier-package-json ./package.json --write",
+    "format:packageJson:packages": "npx lerna run format:packageJson",
     "pub": "lerna publish",
     "test": "lerna run test"
   },

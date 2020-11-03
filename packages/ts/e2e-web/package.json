@@ -1,27 +1,29 @@
 {
-  "name": "@clementohnz/e2e-web",
-  "version": "0.0.0",
-  "description": "Run end-to-end tests from the web UI.",
-  "repository": "git@github.com:clementohNZ/monorepo-reference.git",
-  "main": "dist/index",
-  "author": "Clement Oh",
-  "license": "UNLICENSED",
   "private": true,
+  "name": "@clementohnz/e2e-web",
+  "description": "Run end-to-end tests from the web UI.",
+  "license": "UNLICENSED",
+  "author": "Clement Oh",
+  "repository": "git@github.com:clementohNZ/monorepo-reference.git",
+  "version": "0.0.0",
+  "main": "dist/index",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
     "clean": "node_modules/.bin/rimraf -rf ./dist",
     "compile": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "yarn run build",
-    "test": "yarn run build",
     "e2e": "npx codeceptjs run --steps --verbose",
     "e2e:new": "npx codeceptjs gt",
-    "e2e:ui": "npx codecept-ui --app"
+    "e2e:ui": "npx codecept-ui --app",
+    "format:packageJson": "npx prettier-package-json ./package.json --write",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run build"
   },
   "devDependencies": {
     "codeceptjs": "^3.0.1",
+    "prettier": "^2.1.2",
+    "prettier-package-json": "^2.1.3",
     "puppeteer": "^5.4.1",
     "rimraf": "^3.0.2"
   }

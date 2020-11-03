@@ -1,12 +1,12 @@
 {
-  "name": "@clementohnz/core",
-  "version": "0.0.0",
-  "description": "Core entities and enterprise rules for clean architecture.",
-  "repository": "git@github.com:clementohNZ/monorepo-reference.git",
-  "main": "dist/index",
-  "author": "Clement Oh",
-  "license": "UNLICENSED",
   "private": true,
+  "name": "@clementohnz/core",
+  "description": "Core entities and enterprise rules for clean architecture.",
+  "license": "UNLICENSED",
+  "author": "Clement Oh",
+  "repository": "git@github.com:clementohNZ/monorepo-reference.git",
+  "version": "0.0.0",
+  "main": "dist/index",
   "files": [
     "dist"
   ],
@@ -14,13 +14,17 @@
     "build": "yarn run clean && yarn run compile",
     "clean": "node_modules/.bin/rimraf -rf ./dist",
     "compile": "tsc -p tsconfig.build.json",
+    "format:packageJson": "npx prettier-package-json ./package.json --write",
     "prepublishOnly": "yarn run build",
     "test": "yarn run build"
   },
   "dependencies": {
+    "@angular/core": "^10.2.1",
     "@clementohnz/data": "^0.0.0"
   },
   "devDependencies": {
+    "prettier": "^2.1.2",
+    "prettier-package-json": "^2.1.3",
     "rimraf": "^3.0.2"
   }
 }

@@ -1,3 +1,4 @@
-import { meaningOfLife } from "@clementohnz/data";
-
-console.log(meaningOfLife);
+export * from "./base/index";
+export * from "./domain/index";
+export * from "./repositories/index";
+export * from "./use-cases/index";

@@ -3,7 +3,9 @@
     "module": "commonjs",
     "target": "es5",
     "sourceMap": true,
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist"]
 }
