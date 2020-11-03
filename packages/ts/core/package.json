@@ -1,0 +1,25 @@
+{
+  "name": "@clementohnz/core",
+  "version": "0.0.0",
+  "description": "Core entities and enterprise rules for clean architecture.",
+  "main": "dist/index",
+  "author": "Clement Oh",
+  "license": "UNLICENSED",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "node_modules/.bin/rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run build"
+  },
+  "dependencies": {
+    "@clementohnz/data": "^0.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

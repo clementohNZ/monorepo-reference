@@ -1,0 +1,22 @@
+{
+  "name": "@clementohnz/data",
+  "version": "0.0.0",
+  "description": "Repository layer for fetching information (clean architecture adapters layer).",
+  "main": "dist/index",
+  "author": "Clement Oh",
+  "license": "UNLICENSED",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "node_modules/.bin/rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run build"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

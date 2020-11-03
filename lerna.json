@@ -1,0 +1,5 @@
+{
+  "packages": ["packages/ts/*", "packages/jvm/*"],
+  "useWorkspaces": true,
+  "npmClient": "yarn"
+}

@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "ignoreChainWithDepth": 1,
+    "no-var": "error",
+    "indent": ["error", 2],
+    "prettier/prettier": "error",
+    "comma-dangle": "error"
+  }
+}

@@ -1,0 +1,17 @@
+**/dist
+**/node_modules
+**/*.png
+**/*.ico
+**/src/assets
+.browserslistrc
+.editorconfig
+.gitignore
+.huskyrc
+.idea
+.prettierignore
+*.lock
+coverage
+.nvmrc
+.dockerignore
+Dockerfile
+Dockerfile.*
