@@ -15,7 +15,10 @@
     "clean": "node_modules/.bin/rimraf -rf ./dist",
     "compile": "tsc -p tsconfig.build.json",
     "prepublishOnly": "yarn run build",
-    "test": "yarn run build"
+    "test": "yarn run build",
+    "e2e": "npx codeceptjs run --steps --verbose",
+    "e2e:new": "npx codeceptjs gt",
+    "e2e:ui": "npx codecept-ui --app"
   },
   "devDependencies": {
     "codeceptjs": "^3.0.1",
