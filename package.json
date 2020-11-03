@@ -11,7 +11,7 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna run clean",
-    "docs": "doctoc --title '##Table of Contents' README.md",
+    "docs": "doctoc --title '## Table of Contents' README.md",
     "format": "npx prettier --write \"**/*\" && npx eslint \"**/*.ts\" --fix && yarn run format:packageJson",
     "format:packageJson": "npx prettier-package-json ./package.json --write",
     "pub": "lerna publish",
